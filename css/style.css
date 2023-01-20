@@ -1,0 +1,101 @@
+
+
+@import url('./utilities.css');
+
+
+
+/*  Showcase Carousel */
+#showcase-carousel .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 80vh;
+  overflow: hidden;
+}
+
+/* Home-Services */
+/* !Take Note: Not working well for medium screen tablets */
+#home-services .main-content .card{
+  overflow: hidden;
+  height: 30rem;
+  box-shadow: .2rem .2rem 1rem #888;
+}
+
+#home-services .main-content .card img{
+  object-fit: cover;
+  object-position: center;
+  height: inherit;
+  width: 100%;
+  transition: transform .5s ease;
+}
+
+#home-services .main-content .card .card-body{
+  height: 20rem;
+  width: 100%;
+  position: absolute;
+  top: 84%;
+  transition: top .3s ease-in;
+  
+}
+
+#home-services .main-content .card:hover .card-body{
+  top:48%
+}
+#home-services .main-content .card:hover img{
+  transform: scale(1.2);
+
+}
+
+/* Services */
+#services .card img{
+  border-top: 1rem solid var(--primary-color) !important;
+}
+#services .card{
+  border-color: var(--primary-color);
+}
+
+/* About Page */
+#about-main .about-main-content h2{
+  margin-bottom: 2rem;
+}
+
+/* Contact Form */
+
+#contact-form-image .offset-image-1{
+  background: url("../images/temp-images/contact-form-image.jpg") center center/cover no-repeat;
+  width: 80%;
+  height: 60%;
+  box-shadow: -1.5rem -1.5rem #ffdae0;
+}
+
+
+#contact .row{
+  margin-left: 0 !important;
+}
+
+#contact form input,
+#contact form select,
+#contact form textarea{
+  border-color: var(--primary-color) ;
+}
+
+#contact form input::placeholder,
+#contact form textarea{
+  opacity: 0.5; /* Firefox */
+  font-size: 0.8rem;
+}
+
+#contact form input:-webkit-input-placeholder {
+  /* Chrome, Safari, Opera */
+  color: #1c87c9;
+}
+#contact form input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #1c87c9;
+}
+
+
+/* Packages */
+.packages-container h3{
+  width: max-content;
+  border-bottom: 2px var(--secondary-color)  dotted;
+}

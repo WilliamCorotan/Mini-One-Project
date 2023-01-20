@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Montserrat&family=Mrs+Saint+Delafield&display=swap');
+/* GLobal Variables */
+:root {
+  --global-sans-serif-font: 'Montserrat', sans-serif;
+  --global-serif-font: 'Josefin Slab', serif;
+  --global-cursive-font: 'Mrs Saint Delafield', cursive;
+  /* Color Pallete:
+    Initial Primary -  #fbeaff
+    Initial Secondary - #2c73d2  */
+  --primary-color: #ff8da1;
+  --secondary-color:#2c73d2;
+  --primary-color-light: #ffdae0;
+}
+
+body {
+  font-family: var(--global-sans-serif-font) !important;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--global-serif-font) !important;
+  color: var(--secondary-color) !important;
+}
+
+.text-primary,
+nav .active{
+  color: var(--primary-color) !important;
+}
+
+.text-secondary{
+  color: var(--secondary-color) !important;
+  font-family: var(--global-serif-font);
+}
+.text-cursive{
+  font-family: var(--global-cursive-font) !important;
+}
+
+a, .btn{
+ transition: all 0.2s ease-in-out !important;
+}
+.btn-primary:hover,
+.btn-secondary:hover
+{
+  opacity: .9;
+}
+
+/* Utilities */
+.btn-primary{
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+  border: 0;
+  width: max-content; 
+}
+.btn-secondary{
+  background-color: var(--secondary-color) !important;
+  color: #fff !important;
+  border: 0;
+}
+
+.overlay-background {
+  width: inherit;
+  background: rgba(0, 0, 0, 0.3);
+}
+.card-body.overlay-background {
+  width: inherit;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.container-background{
+  position: absolute;
+  top: inherit;
+  left: 0;
+  z-index: -1;
+  color: var(--primary-color) ;
+  text-align: justify;
+  font-size: 3rem;
+  font-family: var(--global-cursive-font);
+  opacity: .15; 
+  height: max-content;
+  overflow: hidden;
+}
+
+
+/* Animation Utilities */
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* End of Utilities */
+
+/* Navbar */
+nav .active{
+  border-bottom: 2px double var(--primary-color);
+}
+.navbar a:hover{
+  color: var(--secondary-color);
+}
+
+/* Footer */
+footer a:hover{
+  color: var(--primary-color) !important;
+}
+
+footer{
+ background: var(--primary-color-light);
+ color: var(--secondary-color);
+}
+
+footer h5{
+  color: var(--primary-color) !important;
+}
+
+footer .footer-sub {
+  background: var(--primary-color);
+}
+
+footer ul li{
+  margin-bottom: 1rem;
+
+}
+
